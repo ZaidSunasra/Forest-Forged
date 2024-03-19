@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Forest Forged</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <strong><a href="#home">forestforged</a></strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Products/products.html">Products</a></li>
+                <li><a href="">Sign Up</a></li>
+                <!-- <li><a href="">
+                    <span class="material-symbols-rounded"> shopping_cart </span>
+                </a></li> -->
+            </ul>
+        </nav> 
+    </header>
+
+    <section id="home">
+        <div class="home-img">
+            <img src="Images/home-img.avif" alt="">
+        </div>
+        <div class="tagline">
+            <h1><span>forest</span>forged</h1>
+            <h3>Nurtured by Nature, Sourced from the Wild</h3>
+        </div>
+        <div class="chatbot">
+            <a href="#bot"><span class="material-symbols-rounded">support_agent</span></a>
+        </div>
+    </section>
+
+    <section id="bot" class="hide">
+        <div class="chat-area">
+            <div class="name">
+                <div class="bot-image">
+                    <span class="material-symbols-rounded">smart_toy</span>
+                </div>
+                <div class="bot-name">
+                    <h6>Freshy</h6>
+                </div>
+            </div>
+            <div class="message-area">
+            </div>
+            <form  class="send-message">
+                <input type="text" placeholder="Enter your message" id="message">
+                <span class="material-symbols-rounded send"> send </span>
+            </form>
+        </div>
+        <span class="material-symbols-rounded bot-close"> close </span>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

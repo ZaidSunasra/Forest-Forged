@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color:#fff;
+    --secondary-color: #000;
+    --forest : #228b22;
+    --serif: 'Merriweather', serif;
+    --sans-serif : 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 8rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h6{
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--sans-serif);
+    z-index: 2;
+}
+
+.logo a{
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    scale: 1.1;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.changeColor{
+    background-color: var(--secondary-color);
+}
+
+.changeFontColor{
+    color: var(--primary-color);
+}
+
+.material-symbols-rounded{
+    font-size: 1.7rem;
+}
+
+#home{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+}
+
+.tagline{
+    padding: 2rem;
+    backdrop-filter: blur(0.9px);
+    text-align: center;
+}
+
+.tagline h1{
+    color: var(--primary-color);
+    font-family: var(--serif);
+}
+
+.tagline h1 span{
+    color: var(--secondary-color);
+    
+}
+
+.tagline h3{
+    color: var(--primary-color);
+    font-family: var(--sans-serif);
+}
+
+.chatbot{
+    position: absolute;
+    background-color: var(--forest);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chatbot a span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chatbot:hover{
+    background-color: var(--secondary-color);
+}
+
+.chatbot span{
+    color: var(--primary-color);
+}
+
+.hide{
+    display: none !important;
+} 
+
+#bot{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+    position: relative;
+}
+
+.bot-close{
+    position: absolute;
+    top: 13vh;
+    right: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bot-close:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.chat-area{
+    width: 80%;
+    background-color: var(--primary-color);
+    border: 5px solid var(--forest);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px 25px 0 0;
+}
+
+.name{
+    background-color: var(--forest);
+    color: var(--primary-color);
+    font-family: var(--serif);
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.message-area{
+    padding: 10px;
+    height: 80%;
+    background-color: rgba(34, 139, 34, 0.1);
+    height: 90%;
+    overflow-y: auto;
+}
+
+.message-style{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--forest);
+    color: var(--primary-color);
+    border-radius: 10px;
+    max-width: 70%;
+    font-family: var(--sans-serif);
+}
+
+.send-message{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 2px solid var(--forest);
+}
+
+.send-message input{
+    width: 95%;
+    padding: 10px;
+    border: none;
+    color: var(--forest);
+    font-size: 24px;
+}
+
+.send-message input:focus{
+    outline: none;
+}
+
+.send-message input::placeholder{
+    color: var(--forest);
+    font-size: 24px;
+    font-family: var(--serif);
+}
+
+.send-message span{
+    cursor: pointer;
+    background-color: var(--forest);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.show{
+    display: block;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
